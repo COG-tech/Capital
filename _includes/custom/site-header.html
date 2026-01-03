@@ -1,0 +1,82 @@
+﻿{% assign t = site.data.i18n[page.locale] | default: site.data.i18n.en %}
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="brand" href="index.html" translate="no">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>ECSY</span>
+      </a>
+      <nav class="nav" aria-label="Site">
+        <a href="index.html">{{ t.nav.home }}</a>
+        <a href="index.html#test">{{ t.nav.test }}</a>
+        <a href="types.html">{{ t.nav.types }}</a>
+        <a href="theory.html">{{ t.nav.theory }}</a>
+        <a href="resources.html">{{ t.nav.resources }}</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost lang-toggle" id="langToggle" type="button" aria-haspopup="dialog" aria-controls="langModal">
+          {{ t.nav.language }}
+        </button>
+        <a class="btn btn-main" href="index.html#test">{{ t.nav.start }}</a>
+      </div>
+    </div>
+  </div>
+  <div class="lang-modal" id="langModal" role="dialog" aria-modal="true" aria-labelledby="langTitle" hidden>
+    <div class="lang-modal-panel">
+      <div class="lang-modal-head">
+        <div id="langTitle" class="lang-modal-title">{{ t.nav.language }}</div>
+        <button class="lang-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="lang-list">
+        <button class="lang-option" type="button" data-locale="en">
+          <span class="lang-label">English</span>
+          <span class="lang-native">English</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="es">
+          <span class="lang-label">Español</span>
+          <span class="lang-native">Español</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="fr">
+          <span class="lang-label">Français</span>
+          <span class="lang-native">Français</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="ar">
+          <span class="lang-label">العربية</span>
+          <span class="lang-native">العربية</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="hi">
+          <span class="lang-label">हिन्दी</span>
+          <span class="lang-native">हिन्दी</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="bn">
+          <span class="lang-label">বাংলা</span>
+          <span class="lang-native">বাংলা</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="pt">
+          <span class="lang-label">Português</span>
+          <span class="lang-native">Português</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="ru">
+          <span class="lang-label">Русский</span>
+          <span class="lang-native">Русский</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="id">
+          <span class="lang-label">Bahasa Indonesia</span>
+          <span class="lang-native">Bahasa Indonesia</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="zh-hans">
+          <span class="lang-label">中文(简体)</span>
+          <span class="lang-native">中文(简体)</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="zh-hant">
+          <span class="lang-label">中文(繁體)</span>
+          <span class="lang-native">中文(繁體)</span>
+        </button>
+        <button class="lang-option" type="button" data-locale="fil">
+          <span class="lang-label">Tagalog (PH)</span>
+          <span class="lang-native">Tagalog</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

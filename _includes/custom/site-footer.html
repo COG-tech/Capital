@@ -1,0 +1,6 @@
+<footer class="site-footer">
+  <div class="container">
+    {% assign t = site.data.i18n[page.locale] | default: site.data.i18n.en %}
+    <p>{{ t.footer.tagline }}</p>
+  </div>
+</footer>

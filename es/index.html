@@ -1,0 +1,104 @@
+---
+layout: custom
+title: "Explorador de tipos ECSY"
+group: "group-ec"
+locale: "es"
+lang: "es"
+dir: "ltr"
+---
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>Explorador de tipos ECSY</h1>
+<p>Medir el capital Económico, Cultural, Social y Simbólico. Obtenga un tipo con fortalezas claras y palancas de crecimiento.</p>
+<div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+<a class="btn btn-main" href="#test">Iniciar la prueba</a>
+<a class="btn btn-ghost" href="types.html">Ver todos los tipos</a>
+</div>
+<div aria-label="Quick facts" class="hero-badges">
+<span class="badge"><span class="dot"></span>24 tipos</span>
+<span class="badge"><span class="dot alt"></span>96 preguntas</span>
+<span class="badge"><span class="dot"></span>Resultados rápidos</span>
+</div>
+</div>
+<div class="card" style="background: rgba(255,255,255,.65);">
+<div class="kicker">como funciona</div>
+<p class="sub">Responda la prueba, obtenga una pila clasificada E/C/S/Y y luego lea su manual de estrategias de tipo.</p>
+<hr/>
+<div class="kicker">lo que obtienes</div>
+<p class="sub">Fortalezas, puntos de fricción, un seguimiento de acción de 7/30/90 días y un mapa de todo el año.</p>
+</div>
+</div>
+</section>
+<div style="height:18px"></div>
+<section class="grid grid-3">
+<div class="card">
+<div class="kicker">Paso 1</div>
+<h2>haz la prueba</h2>
+<p>Diseño limpio, una siguiente acción clara y una barra de progreso visible.</p>
+</div>
+<div class="card">
+<div class="kicker">Paso 2</div>
+<h2>Ver resultados</h2>
+<p>Tus puntuaciones E/C/S/Y, tu orden de clasificación y tu tipo de coincidencia más cercano.</p>
+</div>
+<div class="card">
+<div class="kicker">Paso 3</div>
+<h2>leer el tipo</h2>
+<p>Medidas prácticas para convertir su capital más sólido en una ventaja duradera.</p>
+</div>
+</section>
+<div style="height:18px"></div>
+<section id="test">
+<div class="container">
+<div class="card">
+<div aria-live="polite" class="page-nav">
+<button class="btn btn-ghost" id="prevPageBtn" type="button">Anterior 6</button>
+<div class="page-label" id="pageLabel">Página 1 de 1</div>
+<button class="btn btn-ghost" id="nextPageBtn" type="button">Siguiente 6</button>
+</div>
+</div>
+<section aria-live="polite" class="card quiz" id="quiz"></section>
+<div class="actions">
+<button class="btn btn-main" id="submitBtn" type="button">Ver resultados</button>
+<button class="btn btn-ghost" id="resetBtn" type="button">Reiniciar</button>
+</div>
+<section aria-live="polite" class="card results hidden" id="results">
+<div class="results-head">
+<div>
+<h3>Tus resultados</h3>
+<p class="note" id="summary"></p>
+<p class="note" id="nextSteps"></p>
+</div>
+<a class="btn btn-ghost" href="types.html" id="resultTypeLink">Tipo de vista</a>
+</div>
+<div class="results-grid">
+<div class="scorebox">
+<div class="label">Económico (E)</div>
+<div class="bar"><div class="fill" id="barE"></div></div>
+<div class="num" id="scoreE">0</div>
+<div class="tier" id="tierE"></div>
+</div>
+<div class="scorebox">
+<div class="label">Cultura (C)</div>
+<div class="bar"><div class="fill" id="barC"></div></div>
+<div class="num" id="scoreC">0</div>
+<div class="tier" id="tierC"></div>
+</div>
+<div class="scorebox">
+<div class="label">Sociales (T)</div>
+<div class="bar"><div class="fill" id="barS"></div></div>
+<div class="num" id="scoreS">0</div>
+<div class="tier" id="tierS"></div>
+</div>
+<div class="scorebox">
+<div class="label">Simbólico (Y)</div>
+<div class="bar"><div class="fill" id="barY"></div></div>
+<div class="num" id="scoreY">0</div>
+<div class="tier" id="tierY"></div>
+</div>
+</div>
+</section>
+</div>
+</section>

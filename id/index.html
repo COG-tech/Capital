@@ -1,0 +1,104 @@
+---
+layout: custom
+title: "Penjelajah Tipe ECSY"
+group: "group-ec"
+locale: "id"
+lang: "id"
+dir: "ltr"
+---
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>Penjelajah Tipe ECSY</h1>
+<p>Mengukur modal Ekonomi, Budaya, Sosial, dan Simbolik. Dapatkan tipe dengan kekuatan dan pengungkit pertumbuhan yang jelas.</p>
+<div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+<a class="btn btn-main" href="#test">Mulai tes</a>
+<a class="btn btn-ghost" href="types.html">Lihat semua tipe</a>
+</div>
+<div aria-label="Quick facts" class="hero-badges">
+<span class="badge"><span class="dot"></span>24 tipe</span>
+<span class="badge"><span class="dot alt"></span>96 pertanyaan</span>
+<span class="badge"><span class="dot"></span>Hasil cepat</span>
+</div>
+</div>
+<div class="card" style="background: rgba(255,255,255,.65);">
+<div class="kicker">Cara kerjanya</div>
+<p class="sub">Jawab tes, dapatkan tumpukan peringkat E/C/S/Y, lalu baca tipe Anda playbook.</p>
+<hr/>
+<div class="kicker">Apa yang Anda dapatkan</div>
+<p class="sub">Kekuatan, titik gesekan, jalur aksi 30/7/90 hari, dan peta setahun penuh.</p>
+</div>
+</div>
+</section>
+<div style="height:18px"></div>
+<section class="grid grid-3">
+<div class="card">
+<div class="kicker">Langkah 1</div>
+<h2>Ikuti tes</h2>
+<p>Tata letak bersih, satu tindakan selanjutnya yang jelas, dan bilah kemajuan yang terlihat.</p>
+</div>
+<div class="card">
+<div class="kicker">Langkah 2</div>
+<h2>Lihat hasilnya</h2>
+<p>Skor E/C/S/Y Anda, urutan peringkat Anda, dan jenis kecocokan terdekat Anda.</p>
+</div>
+<div class="card">
+<div class="kicker">Langkah 3</div>
+<h2>Baca jenisnya</h2>
+<p>Langkah praktis untuk mengubah modal terkuat Anda menjadi keuntungan yang tahan lama.</p>
+</div>
+</section>
+<div style="height:18px"></div>
+<section id="test">
+<div class="container">
+<div class="card">
+<div aria-live="polite" class="page-nav">
+<button class="btn btn-ghost" id="prevPageBtn" type="button">Sebelumnya 6</button>
+<div class="page-label" id="pageLabel">Halaman 1 dari 1</div>
+<button class="btn btn-ghost" id="nextPageBtn" type="button">6 Berikutnya</button>
+</div>
+</div>
+<section aria-live="polite" class="card quiz" id="quiz"></section>
+<div class="actions">
+<button class="btn btn-main" id="submitBtn" type="button">Lihat Hasil</button>
+<button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+</div>
+<section aria-live="polite" class="card results hidden" id="results">
+<div class="results-head">
+<div>
+<h3>Hasil Anda</h3>
+<p class="note" id="summary"></p>
+<p class="note" id="nextSteps"></p>
+</div>
+<a class="btn btn-ghost" href="types.html" id="resultTypeLink">Jenis Tampilan</a>
+</div>
+<div class="results-grid">
+<div class="scorebox">
+<div class="label">Ekonomi (E)</div>
+<div class="bar"><div class="fill" id="barE"></div></div>
+<div class="num" id="scoreE">0</div>
+<div class="tier" id="tierE"></div>
+</div>
+<div class="scorebox">
+<div class="label">Budaya (C)</div>
+<div class="bar"><div class="fill" id="barC"></div></div>
+<div class="num" id="scoreC">0|</div>
+<div class="tier" id="tierC"></div>
+</div>
+<div class="scorebox">
+<div class="label">Sosial (S)</div>
+<div class="bar"><div class="fill" id="barS"></div></div>
+<div class="num" id="scoreS">0</div>
+<div class="tier" id="tierS"></div>
+</div>
+<div class="scorebox">
+<div class="label">Simbolis (Y)</div>
+<div class="bar"><div class="fill" id="barY"></div></div>
+<div class="num" id="scoreY">0</div>
+<div class="tier" id="tierY"></div>
+</div>
+</div>
+</section>
+</div>
+</section>

@@ -1,0 +1,38 @@
+---
+---
+
+{% assign html_lang = page.lang | default: site.locale | default: "en" %}
+{% if page.dir %}
+  {% assign html_dir = page.dir %}
+{% elsif site.rtl %}
+  {% assign html_dir = "rtl" %}
+{% else %}
+  {% assign html_dir = "ltr" %}
+{% endif %}
+<!doctype html>
+<html lang="{{ html_lang | replace: "_", "-" }}" dir="{{ html_dir }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/components.css' | relative_url }}">
+  </head>
+  <body class="layout--custom {{ page.group | default: 'group-ec' }}{% if page.classes %} {{ page.classes | join: ' ' }}{% endif %}" dir="{{ html_dir }}">
+    <div class="initial-content">
+      {% include custom/site-header.html %}
+      <main class="site-main">
+        {{ content }}
+      </main>
+      {% include custom/site-footer.html %}
+    </div>
+    <script>
+      window.RESULTS_ENDPOINT = "{{ site.results_endpoint | default: '' }}";
+      window.SITE_BASE = "{{ site.baseurl | default: '' }}";
+      window.SITE_LOCALE = "{{ page.locale | default: 'en' }}";
+    </script>
+    {% include scripts.html %}
+    <script src="{{ '/assets/js/type-ui.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/lang.js' | relative_url }}"></script>
+  </body>
+</html>

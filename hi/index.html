@@ -1,0 +1,104 @@
+---
+layout: custom
+title: "ईसीएसवाई टाइप एक्सप्लोरर"
+group: "group-ec"
+locale: "hi"
+lang: "hi"
+dir: "ltr"
+---
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>ईसीएसवाई टाइप एक्सप्लोरर</h1>
+<p>आर्थिक, सांस्कृतिक, सामाजिक और प्रतीकात्मक पूंजी को मापें। स्पष्ट शक्तियों और विकास उत्तोलन वाला एक प्रकार प्राप्त करें।</p>
+<div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+<a class="btn btn-main" href="#test">परीक्षण प्रारंभ करें</a>
+<a class="btn btn-ghost" href="types.html">सभी प्रकार देखें</a>
+</div>
+<div aria-label="Quick facts" class="hero-badges">
+<span class="badge"><span class="dot"></span>24 प्रकार</span>
+<span class="badge"><span class="dot alt"></span>96 प्रश्न</span>
+<span class="badge"><span class="dot"></span>तेज़ परिणाम</span>
+</div>
+</div>
+<div class="card" style="background: rgba(255,255,255,.65);">
+<div class="kicker">यह काम किस प्रकार करता है</div>
+<p class="sub">परीक्षण का उत्तर दें, रैंक वाला ई/सी/एस/वाई स्टैक प्राप्त करें, फिर अपनी टाइप प्लेबुक पढ़ें।</p>
+<hr/>
+<div class="kicker">आपको क्या मिलता है</div>
+<p class="sub">ताकत, घर्षण बिंदु, 7/30/90-दिन का एक्शन ट्रैक और पूरे साल का नक्शा।</p>
+</div>
+</div>
+</section>
+<div style="height:18px"></div>
+<section class="grid grid-3">
+<div class="card">
+<div class="kicker">स्टेप 1</div>
+<h2>परीक्षण करें</h2>
+<p>साफ़ लेआउट, एक स्पष्ट अगली कार्रवाई और एक दृश्यमान प्रगति पट्टी।</p>
+</div>
+<div class="card">
+<div class="kicker">चरण दो</div>
+<h2>परिणाम देखें</h2>
+<p>आपका ई/सी/एस/वाई स्कोर, आपका रैंक क्रम और आपका निकटतम प्रकार मेल खाता है।</p>
+</div>
+<div class="card">
+<div class="kicker">चरण 3</div>
+<h2>प्रकार पढ़ें</h2>
+<p>आपकी सबसे मजबूत पूंजी को टिकाऊ लाभ में बदलने के लिए व्यावहारिक कदम।</p>
+</div>
+</section>
+<div style="height:18px"></div>
+<section id="test">
+<div class="container">
+<div class="card">
+<div aria-live="polite" class="page-nav">
+<button class="btn btn-ghost" id="prevPageBtn" type="button">पिछला 6</button>
+<div class="page-label" id="pageLabel">पेज 1 का 1</div>
+<button class="btn btn-ghost" id="nextPageBtn" type="button">अगला 6</button>
+</div>
+</div>
+<section aria-live="polite" class="card quiz" id="quiz"></section>
+<div class="actions">
+<button class="btn btn-main" id="submitBtn" type="button">परिणाम देखें</button>
+<button class="btn btn-ghost" id="resetBtn" type="button">रीसेट करें</button>
+</div>
+<section aria-live="polite" class="card results hidden" id="results">
+<div class="results-head">
+<div>
+<h3>आपके परिणाम</h3>
+<p class="note" id="summary"></p>
+<p class="note" id="nextSteps"></p>
+</div>
+<a class="btn btn-ghost" href="types.html" id="resultTypeLink">प्रकार देखें</a>
+</div>
+<div class="results-grid">
+<div class="scorebox">
+<div class="label">आर्थिक (ई)</div>
+<div class="bar"><div class="fill" id="barE"></div></div>
+<div class="num" id="scoreE">0</div>
+<div class="tier" id="tierE"></div>
+</div>
+<div class="scorebox">
+<div class="label">सांस्कृतिक (सी)</div>
+<div class="bar"><div class="fill" id="barC"></div></div>
+<div class="num" id="scoreC">0</div>
+<div class="tier" id="tierC"></div>
+</div>
+<div class="scorebox">
+<div class="label">सामाजिक (एस)</div>
+<div class="bar"><div class="fill" id="barS"></div></div>
+<div class="num" id="scoreS">0</div>
+<div class="tier" id="tierS"></div>
+</div>
+<div class="scorebox">
+<div class="label">प्रतीकात्मक (वाई)</div>
+<div class="bar"><div class="fill" id="barY"></div></div>
+<div class="num" id="scoreY">0</div>
+<div class="tier" id="tierY"></div>
+</div>
+</div>
+</section>
+</div>
+</section>

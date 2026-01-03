@@ -1,0 +1,18 @@
+{% assign base_url = site.url | default: "https://cog-tech.github.io" %}
+{% assign base_path = site.baseurl | default: "" %}
+{% assign url_parts = page.url | split: "/" %}
+{% assign locale_segment = url_parts[1] %}
+{% assign rest_path = url_parts | slice: 2, url_parts.size | join: "/" %}
+{% if rest_path == "" %}
+  {% assign rest_path = "index.html" %}
+{% endif %}
+{% assign locales = "en,es,fr,ar,hi,bn,pt,ru,id,zh-hans,zh-hant,fil" | split: "," %}
+{% for loc in locales %}
+  {% case loc %}
+    {% when "zh-hans" %}{% assign hreflang = "zh-Hans" %}
+    {% when "zh-hant" %}{% assign hreflang = "zh-Hant" %}
+    {% else %}{% assign hreflang = loc %}
+  {% endcase %}
+  <link rel="alternate" hreflang="{{ hreflang }}" href="{{ base_url }}{{ base_path }}/{{ loc }}/{{ rest_path }}" />
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ base_url }}{{ base_path }}/en/{{ rest_path }}" />

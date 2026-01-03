@@ -1,0 +1,118 @@
+---
+layout: custom
+title: "ECSY Type Explorer"
+group: "group-ec"
+locale: "en"
+lang: "en"
+dir: "ltr"
+---
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1>ECSY Type Explorer</h1>
+      <p>Measure Economic, Cultural, Social, and Symbolic capital. Get a type with clear strengths and growth levers.</p>
+
+      <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+        <a class="btn btn-main" href="#test">Start the test</a>
+        <a class="btn btn-ghost" href="types.html">View all types</a>
+      </div>
+
+      <div class="hero-badges" aria-label="Quick facts">
+        <span class="badge"><span class="dot"></span>24 types</span>
+        <span class="badge"><span class="dot alt"></span>96 questions</span>
+        <span class="badge"><span class="dot"></span>Fast results</span>
+      </div>
+    </div>
+
+    <div class="card" style="background: rgba(255,255,255,.65);">
+      <div class="kicker">How it works</div>
+      <p class="sub">Answer the test, get a ranked E/C/S/Y stack, then read your type playbook.</p>
+      <hr>
+      <div class="kicker">What you get</div>
+      <p class="sub">Strengths, friction points, a 7/30/90-day action track, and a full-year map.</p>
+    </div>
+  </div>
+</section>
+
+<div style="height:18px"></div>
+
+<section class="grid grid-3">
+  <div class="card">
+    <div class="kicker">Step 1</div>
+    <h2>Take the test</h2>
+    <p>Clean layout, one clear next action, and a visible progress bar.</p>
+  </div>
+  <div class="card">
+    <div class="kicker">Step 2</div>
+    <h2>See results</h2>
+    <p>Your E/C/S/Y scores, your rank order, and your closest type match.</p>
+  </div>
+  <div class="card">
+    <div class="kicker">Step 3</div>
+    <h2>Read the type</h2>
+    <p>Practical moves to turn your strongest capital into durable advantage.</p>
+  </div>
+</section>
+
+<div style="height:18px"></div>
+
+<section id="test">
+  <div class="container">
+    <div class="card">
+      <div class="page-nav" aria-live="polite">
+        <button id="prevPageBtn" class="btn btn-ghost" type="button">Previous 6</button>
+        <div id="pageLabel" class="page-label">Page 1 of 1</div>
+        <button id="nextPageBtn" class="btn btn-ghost" type="button">Next 6</button>
+      </div>
+    </div>
+
+    <section id="quiz" class="card quiz" aria-live="polite"></section>
+
+    <div class="actions">
+      <button id="submitBtn" class="btn btn-main" type="button">See Results</button>
+      <button id="resetBtn" class="btn btn-ghost" type="button">Reset</button>
+    </div>
+
+    <section id="results" class="card results hidden" aria-live="polite">
+      <div class="results-head">
+        <div>
+          <h3>Your Results</h3>
+          <p class="note" id="summary"></p>
+          <p class="note" id="nextSteps"></p>
+        </div>
+        <a id="resultTypeLink" class="btn btn-ghost" href="types.html">View Type</a>
+      </div>
+
+      <div class="results-grid">
+        <div class="scorebox">
+          <div class="label">Economic (E)</div>
+          <div class="bar"><div id="barE" class="fill"></div></div>
+          <div id="scoreE" class="num">0</div>
+          <div id="tierE" class="tier"></div>
+        </div>
+
+        <div class="scorebox">
+          <div class="label">Cultural (C)</div>
+          <div class="bar"><div id="barC" class="fill"></div></div>
+          <div id="scoreC" class="num">0</div>
+          <div id="tierC" class="tier"></div>
+        </div>
+
+        <div class="scorebox">
+          <div class="label">Social (S)</div>
+          <div class="bar"><div id="barS" class="fill"></div></div>
+          <div id="scoreS" class="num">0</div>
+          <div id="tierS" class="tier"></div>
+        </div>
+
+        <div class="scorebox">
+          <div class="label">Symbolic (Y)</div>
+          <div class="bar"><div id="barY" class="fill"></div></div>
+          <div id="scoreY" class="num">0</div>
+          <div id="tierY" class="tier"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

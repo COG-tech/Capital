@@ -1,0 +1,7 @@
+main:
+  - title: "Test"
+    url: "/#test"
+  - title: "Types"
+    url: "/types/"
+  - title: "Resources"
+    url: "/resources/"

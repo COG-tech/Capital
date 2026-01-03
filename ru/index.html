@@ -1,0 +1,104 @@
+---
+layout: custom
+title: "Обозреватель типов ECSY"
+group: "group-ec"
+locale: "ru"
+lang: "ru"
+dir: "ltr"
+---
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>Обозреватель типов ECSY</h1>
+<p>Измерьте экономический, культурный, социальный и символический капитал. Получите тип с явными сильными сторонами и рычагами роста.</p>
+<div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+<a class="btn btn-main" href="#test">Начать тест</a>
+<a class="btn btn-ghost" href="types.html">Просмотреть все типы</a>
+</div>
+<div aria-label="Quick facts" class="hero-badges">
+<span class="badge"><span class="dot"></span>24 типа</span>
+<span class="badge"><span class="dot alt"></span>96 вопросов</span>
+<span class="badge"><span class="dot"></span>Быстрые результаты</span>
+</div>
+</div>
+<div class="card" style="background: rgba(255,255,255,.65);">
+<div class="kicker">Как это работает</div>
+<p class="sub">Ответьте на тест, получите ранговый стек E/C/S/Y, а затем прочитайте свой введите playbook.</p>
+<hr/>
+<div class="kicker">Что вы получаете</div>
+<p class="sub">Сильные стороны, точки разногласий, 7/30/90-дневный трек действий и карту на весь год.</p>
+</div>
+</div>
+</section>
+<div style="height:18px"></div>
+<section class="grid grid-3">
+<div class="card">
+<div class="kicker">Шаг 1</div>
+<h2>Пройдите тест</h2>
+<p>Чистый макет, одно четкое следующее действие и видимый индикатор выполнения.</p>
+</div>
+<div class="card">
+<div class="kicker">Шаг 2</div>
+<h2>Посмотреть результаты</h2>
+<p>Ваши баллы E/C/S/Y, порядок рангов и соответствие ближайшего типа.</p>
+</div>
+<div class="card">
+<div class="kicker">Шаг 3</div>
+<h2>Прочитайте тип</h2>
+<p>Практические шаги, чтобы превратить ваш самый сильный капитал в долгосрочное преимущество.</p>
+</div>
+</section>
+<div style="height:18px"></div>
+<section id="test">
+<div class="container">
+<div class="card">
+<div aria-live="polite" class="page-nav">
+<button class="btn btn-ghost" id="prevPageBtn" type="button">Предыдущая 6</button>
+<div class="page-label" id="pageLabel">Страница 1 из 1</div>
+<button class="btn btn-ghost" id="nextPageBtn" type="button">Следующие 6</button>
+</div>
+</div>
+<section aria-live="polite" class="card quiz" id="quiz"></section>
+<div class="actions">
+<button class="btn btn-main" id="submitBtn" type="button">Посмотреть результаты</button>
+<button class="btn btn-ghost" id="resetBtn" type="button">Сбросить</button>
+</div>
+<section aria-live="polite" class="card results hidden" id="results">
+<div class="results-head">
+<div>
+<h3>Ваши результаты</h3>
+<p class="note" id="summary"></p>
+<p class="note" id="nextSteps"></p>
+</div>
+<a class="btn btn-ghost" href="types.html" id="resultTypeLink">Тип просмотра</a>
+</div>
+<div class="results-grid">
+<div class="scorebox">
+<div class="label">Экономический (E)</div>
+<div class="bar"><div class="fill" id="barE"></div></div>
+<div class="num" id="scoreE">0</div>
+<div class="tier" id="tierE"></div>
+</div>
+<div class="scorebox">
+<div class="label">Культурный (C)</div>
+<div class="bar"><div class="fill" id="barC"></div></div>
+<div class="num" id="scoreC">0</div>
+<div class="tier" id="tierC"></div>
+</div>
+<div class="scorebox">
+<div class="label">Социальный (S)</div>
+<div class="bar"><div class="fill" id="barS"></div></div>
+<div class="num" id="scoreS">0</div>
+<div class="tier" id="tierS"></div>
+</div>
+<div class="scorebox">
+<div class="label">Символический (Y)</div>
+<div class="bar"><div class="fill" id="barY"></div></div>
+<div class="num" id="scoreY">0</div>
+<div class="tier" id="tierY"></div>
+</div>
+</div>
+</section>
+</div>
+</section>

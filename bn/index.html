@@ -1,0 +1,104 @@
+---
+layout: custom
+title: "ECSY টাইপ এক্সপ্লোরার"
+group: "group-ec"
+locale: "bn"
+lang: "bn"
+dir: "ltr"
+---
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>ECSY টাইপ এক্সপ্লোরার</h1>
+<p>অর্থনৈতিক, সাংস্কৃতিক, সামাজিক এবং প্রতীকী মূলধন পরিমাপ করুন। স্পষ্ট শক্তি এবং বৃদ্ধি লিভার সহ একটি টাইপ পান।</p>
+<div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+<a class="btn btn-main" href="#test">পরীক্ষা শুরু করুন</a>
+<a class="btn btn-ghost" href="types.html">সব ধরনের দেখুন</a>
+</div>
+<div aria-label="Quick facts" class="hero-badges">
+<span class="badge"><span class="dot"></span>24 প্রকার</span>
+<span class="badge"><span class="dot alt"></span>96টি প্রশ্ন</span>
+<span class="badge"><span class="dot"></span>দ্রুত ফলাফল</span>
+</div>
+</div>
+<div class="card" style="background: rgba(255,255,255,.65);">
+<div class="kicker">এটা কিভাবে কাজ করে</div>
+<p class="sub">পরীক্ষার উত্তর দিন, একটি র‌্যাঙ্ক করা E/C/S/Y স্ট্যাক পান, তারপর আপনার টাইপ প্লেবুক পড়ুন।</p>
+<hr/>
+<div class="kicker">যা পাবেন</div>
+<p class="sub">শক্তি, ঘর্ষণ পয়েন্ট, একটি 7/30/90-দিনের অ্যাকশন ট্র্যাক এবং একটি পুরো বছরের মানচিত্র৷</p>
+</div>
+</div>
+</section>
+<div style="height:18px"></div>
+<section class="grid grid-3">
+<div class="card">
+<div class="kicker">ধাপ 1</div>
+<h2>পরীক্ষা নিন</h2>
+<p>পরিষ্কার লেআউট, একটি পরিষ্কার পরবর্তী ক্রিয়া এবং একটি দৃশ্যমান অগ্রগতি বার।</p>
+</div>
+<div class="card">
+<div class="kicker">ধাপ 2</div>
+<h2>ফলাফল দেখুন</h2>
+<p>আপনার E/C/S/Y স্কোর, আপনার র‌্যাঙ্ক অর্ডার, এবং আপনার নিকটতম প্রকারের মিল।</p>
+</div>
+<div class="card">
+<div class="kicker">ধাপ 3</div>
+<h2>টাইপ পড়ুন</h2>
+<p>আপনার শক্তিশালী মূলধনকে টেকসই সুবিধাতে পরিণত করার জন্য ব্যবহারিক পদক্ষেপ।</p>
+</div>
+</section>
+<div style="height:18px"></div>
+<section id="test">
+<div class="container">
+<div class="card">
+<div aria-live="polite" class="page-nav">
+<button class="btn btn-ghost" id="prevPageBtn" type="button">আগের 6</button>
+<div class="page-label" id="pageLabel">পৃষ্ঠা 1 এর 1</div>
+<button class="btn btn-ghost" id="nextPageBtn" type="button">পরবর্তী 6</button>
+</div>
+</div>
+<section aria-live="polite" class="card quiz" id="quiz"></section>
+<div class="actions">
+<button class="btn btn-main" id="submitBtn" type="button">ফলাফল দেখুন</button>
+<button class="btn btn-ghost" id="resetBtn" type="button">রিসেট করুন</button>
+</div>
+<section aria-live="polite" class="card results hidden" id="results">
+<div class="results-head">
+<div>
+<h3>আপনার ফলাফল</h3>
+<p class="note" id="summary"></p>
+<p class="note" id="nextSteps"></p>
+</div>
+<a class="btn btn-ghost" href="types.html" id="resultTypeLink">দেখুন প্রকার</a>
+</div>
+<div class="results-grid">
+<div class="scorebox">
+<div class="label">অর্থনৈতিক (E)</div>
+<div class="bar"><div class="fill" id="barE"></div></div>
+<div class="num" id="scoreE">0</div>
+<div class="tier" id="tierE"></div>
+</div>
+<div class="scorebox">
+<div class="label">সাংস্কৃতিক (C)</div>
+<div class="bar"><div class="fill" id="barC"></div></div>
+<div class="num" id="scoreC">0</div>
+<div class="tier" id="tierC"></div>
+</div>
+<div class="scorebox">
+<div class="label">সামাজিক (এস)</div>
+<div class="bar"><div class="fill" id="barS"></div></div>
+<div class="num" id="scoreS">0</div>
+<div class="tier" id="tierS"></div>
+</div>
+<div class="scorebox">
+<div class="label">প্রতীকী (Y)</div>
+<div class="bar"><div class="fill" id="barY"></div></div>
+<div class="num" id="scoreY">0</div>
+<div class="tier" id="tierY"></div>
+</div>
+</div>
+</section>
+</div>
+</section>

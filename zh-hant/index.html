@@ -1,0 +1,104 @@
+---
+layout: custom
+title: "ECSY 類型瀏覽器"
+group: "group-ec"
+locale: "zh-hant"
+lang: "zh-Hant"
+dir: "ltr"
+---
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>ECSY 類型瀏覽器</h1>
+<p>衡量經濟、文化、社會和象徵資本。獲得具有明顯優勢和成長槓桿的類型。 </p>
+<div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+<a class="btn btn-main" href="#test">開始測試</a>
+<a class="btn btn-ghost" href="types.html">查看所有類型</a>
+</div>
+<div aria-label="Quick facts" class="hero-badges">
+<span class="badge"><span class="dot"></span>24 種類型</span>
+<span class="badge"><span class="dot alt"></span>96 個問題</span>
+<span class="badge"><span class="dot"></span>快速結果</span>
+</div>
+</div>
+<div class="card" style="background: rgba(255,255,255,.65);">
+<div class="kicker">工作原理</div>
+<p class="sub">回答測試，獲得排名的 E/C/S/Y 堆棧，然後讀取您的類型劇本。 </p>
+<hr/>
+<div class="kicker">您將獲得什麼</div>
+<p class="sub">優勢、摩擦點、7/30/90 天的行動軌跡和全年地圖。 </p>
+</div>
+</div>
+</section>
+<div style="height:18px"></div>
+<section class="grid grid-3">
+<div class="card">
+<div class="kicker">第 1 步</div>
+<h2>參加測試</h2>
+<p>清晰的佈局、清晰的下一步行動和可見的進度條。 </p>
+</div>
+<div class="card">
+<div class="kicker">第 2 步</div>
+<h2>查看結果</h2>
+<p>您的 E/C/S/Y 分數、您的排名順序以及您最接近的類型匹配。 </p>
+</div>
+<div class="card">
+<div class="kicker">第 3 步</div>
+<h2>閱讀類型</h2>
+<p>將您最強大的資本轉化為持久優勢的實際操作。 </p>
+</div>
+</section>
+<div style="height:18px"></div>
+<section id="test">
+<div class="container">
+<div class="card">
+<div aria-live="polite" class="page-nav">
+<button class="btn btn-ghost" id="prevPageBtn" type="button">上一頁 6</button>
+<div class="page-label" id="pageLabel">第 1 頁，共 1 頁</div>
+<button class="btn btn-ghost" id="nextPageBtn" type="button">下 6</button>
+</div>
+</div>
+<section aria-live="polite" class="card quiz" id="quiz"></section>
+<div class="actions">
+<button class="btn btn-main" id="submitBtn" type="button">查看結果</button>
+<button class="btn btn-ghost" id="resetBtn" type="button">重置</button>
+</div>
+<section aria-live="polite" class="card results hidden" id="results">
+<div class="results-head">
+<div>
+<h3>您的結果</h3>
+<p class="note" id="summary"></p>
+<p class="note" id="nextSteps"></p>
+</div>
+<a class="btn btn-ghost" href="types.html" id="resultTypeLink">視圖類型</a>
+</div>
+<div class="results-grid">
+<div class="scorebox">
+<div class="label">經濟 (E)</div>
+<div class="bar"><div class="fill" id="barE"></div></div>
+<div class="num" id="scoreE">0</div>
+<div class="tier" id="tierE"></div>
+</div>
+<div class="scorebox">
+<div class="label">文化 (C)</div>
+<div class="bar"><div class="fill" id="barC"></div></div>
+<div class="num" id="scoreC">0</div>
+<div class="tier" id="tierC"></div>
+</div>
+<div class="scorebox">
+<div class="label">社交 (S)</div>
+<div class="bar"><div class="fill" id="barS"></div></div>
+<div class="num" id="scoreS">0</div>
+<div class="tier" id="tierS"></div>
+</div>
+<div class="scorebox">
+<div class="label">象徵性(Y)</div>
+<div class="bar"><div class="fill" id="barY"></div></div>
+<div class="num" id="scoreY">0</div>
+<div class="tier" id="tierY"></div>
+</div>
+</div>
+</section>
+</div>
+</section>

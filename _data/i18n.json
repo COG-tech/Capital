@@ -1,0 +1,170 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "test": "Test",
+      "types": "Types",
+      "theory": "Theory",
+      "resources": "Resources",
+      "start": "Start",
+      "language": "Language"
+    },
+    "footer": {
+      "tagline": "Built for clarity and curiosity. No external images, fast and lightweight."
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "Hogar",
+      "test": "Prueba",
+      "types": "Tipos",
+      "theory": "Teoría",
+      "resources": "Recursos",
+      "start": "Comenzar",
+      "language": "Idioma"
+    },
+    "footer": {
+      "tagline": "Creado para la claridad y la curiosidad. Sin imágenes externas, rápido y ligero."
+    }
+  },
+  "fr": {
+    "nav": {
+      "home": "Maison",
+      "test": "Test",
+      "types": "Espèces",
+      "theory": "Théorie",
+      "resources": "Ressources",
+      "start": "Commencer",
+      "language": "Langue"
+    },
+    "footer": {
+      "tagline": "Conçu pour la clarté et la curiosité. Aucune image externe, rapide et légère."
+    }
+  },
+  "ar": {
+    "nav": {
+      "home": "بيت",
+      "test": "امتحان",
+      "types": "أنواع",
+      "theory": "نظرية",
+      "resources": "موارد",
+      "start": "يبدأ",
+      "language": "لغة"
+    },
+    "footer": {
+      "tagline": "بنيت من أجل الوضوح والفضول. لا توجد صور خارجية، سريعة وخفيفة الوزن."
+    }
+  },
+  "hi": {
+    "nav": {
+      "home": "घर",
+      "test": "परीक्षा",
+      "types": "प्रकार",
+      "theory": "लिखित",
+      "resources": "संसाधन",
+      "start": "शुरू",
+      "language": "भाषा"
+    },
+    "footer": {
+      "tagline": "स्पष्टता और जिज्ञासा के लिए निर्मित। कोई बाहरी छवि नहीं, तेज़ और हल्का।"
+    }
+  },
+  "bn": {
+    "nav": {
+      "home": "বাড়ি",
+      "test": "পরীক্ষা",
+      "types": "প্রকারভেদ",
+      "theory": "তত্ত্ব",
+      "resources": "সম্পদ",
+      "start": "শুরু করুন",
+      "language": "ভাষা"
+    },
+    "footer": {
+      "tagline": "স্বচ্ছতা এবং কৌতূহল জন্য নির্মিত. কোন বহিরাগত ছবি, দ্রুত এবং হালকা."
+    }
+  },
+  "pt": {
+    "nav": {
+      "home": "Lar",
+      "test": "Teste",
+      "types": "Tipos",
+      "theory": "Teoria",
+      "resources": "Recursos",
+      "start": "Começar",
+      "language": "Linguagem"
+    },
+    "footer": {
+      "tagline": "Construído para clareza e curiosidade. Sem imagens externas, rápido e leve."
+    }
+  },
+  "ru": {
+    "nav": {
+      "home": "Дом",
+      "test": "Тест",
+      "types": "Типы",
+      "theory": "Теория",
+      "resources": "Ресурсы",
+      "start": "Начинать",
+      "language": "Язык"
+    },
+    "footer": {
+      "tagline": "Создан для ясности и любопытства. Никаких внешних изображений, быстрый и легкий."
+    }
+  },
+  "id": {
+    "nav": {
+      "home": "Rumah",
+      "test": "Tes",
+      "types": "Jenis",
+      "theory": "Teori",
+      "resources": "Sumber daya",
+      "start": "Awal",
+      "language": "Bahasa"
+    },
+    "footer": {
+      "tagline": "Dibangun untuk kejelasan dan rasa ingin tahu. Tidak ada gambar eksternal, cepat dan ringan."
+    }
+  },
+  "zh-hans": {
+    "nav": {
+      "home": "家",
+      "test": "测试",
+      "types": "类型",
+      "theory": "理论",
+      "resources": "资源",
+      "start": "开始",
+      "language": "语言"
+    },
+    "footer": {
+      "tagline": "专为清晰度和好奇心而设计。没有外部图像，快速且轻量级。"
+    }
+  },
+  "zh-hant": {
+    "nav": {
+      "home": "家",
+      "test": "測試",
+      "types": "類型",
+      "theory": "理論",
+      "resources": "資源",
+      "start": "開始",
+      "language": "語言"
+    },
+    "footer": {
+      "tagline": "專為清晰度和好奇心而設計。沒有外部圖像，快速且輕量級。"
+    }
+  },
+  "fil": {
+    "nav": {
+      "home": "Bahay",
+      "test": "Pagsubok",
+      "types": "Mga uri",
+      "theory": "Teorya",
+      "resources": "Mga mapagkukunan",
+      "start": "Magsimula",
+      "language": "Wika"
+    },
+    "footer": {
+      "tagline": "Binuo para sa kalinawan at kuryusidad. Walang mga panlabas na larawan, mabilis at magaan."
+    }
+  }
+}

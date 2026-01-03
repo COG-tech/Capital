@@ -1,0 +1,104 @@
+---
+layout: custom
+title: "مستكشف نوع ECSY"
+group: "group-ec"
+locale: "ar"
+lang: "ar"
+dir: "rtl"
+---
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>مستكشف نوع ECSY</h1>
+<p>قياس رأس المال الاقتصادي والثقافي والاجتماعي والرمزي. احصل على نوع يتمتع بنقاط قوة واضحة وأدوات نمو.</p>
+<div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+<a class="btn btn-main" href="#test">ابدأ الاختبار</a>
+<a class="btn btn-ghost" href="types.html">عرض جميع الأنواع</a>
+</div>
+<div aria-label="Quick facts" class="hero-badges">
+<span class="badge"><span class="dot"></span>24 نوعا</span>
+<span class="badge"><span class="dot alt"></span>96 سؤال</span>
+<span class="badge"><span class="dot"></span>نتائج سريعة</span>
+</div>
+</div>
+<div class="card" style="background: rgba(255,255,255,.65);">
+<div class="kicker">كيف يعمل</div>
+<p class="sub">قم بالإجابة على الاختبار، واحصل على مجموعة E/C/S/Y المصنفة، ثم اقرأ دليل الكتابة الخاص بك.</p>
+<hr/>
+<div class="kicker">ما تحصل عليه</div>
+<p class="sub">نقاط القوة ونقاط الاحتكاك ومسار العمل لمدة 7/30/90 يومًا وخريطة لمدة عام كامل.</p>
+</div>
+</div>
+</section>
+<div style="height:18px"></div>
+<section class="grid grid-3">
+<div class="card">
+<div class="kicker">الخطوة 1</div>
+<h2>خذ الاختبار</h2>
+<p>تخطيط نظيف وإجراء تالٍ واضح وشريط تقدم مرئي.</p>
+</div>
+<div class="card">
+<div class="kicker">الخطوة 2</div>
+<h2>انظر النتائج</h2>
+<p>درجات E/C/S/Y الخاصة بك، وترتيب رتبتك، وأقرب نوع مطابق لديك.</p>
+</div>
+<div class="card">
+<div class="kicker">الخطوة 3</div>
+<h2>اقرأ النوع</h2>
+<p>خطوات عملية لتحويل أقوى رأس مال لديك إلى ميزة دائمة.</p>
+</div>
+</section>
+<div style="height:18px"></div>
+<section id="test">
+<div class="container">
+<div class="card">
+<div aria-live="polite" class="page-nav">
+<button class="btn btn-ghost" id="prevPageBtn" type="button">السابق 6</button>
+<div class="page-label" id="pageLabel">الصفحة 1 من 1</div>
+<button class="btn btn-ghost" id="nextPageBtn" type="button">التالي 6</button>
+</div>
+</div>
+<section aria-live="polite" class="card quiz" id="quiz"></section>
+<div class="actions">
+<button class="btn btn-main" id="submitBtn" type="button">انظر النتائج</button>
+<button class="btn btn-ghost" id="resetBtn" type="button">إعادة ضبط</button>
+</div>
+<section aria-live="polite" class="card results hidden" id="results">
+<div class="results-head">
+<div>
+<h3>نتائجك</h3>
+<p class="note" id="summary"></p>
+<p class="note" id="nextSteps"></p>
+</div>
+<a class="btn btn-ghost" href="types.html" id="resultTypeLink">نوع العرض</a>
+</div>
+<div class="results-grid">
+<div class="scorebox">
+<div class="label">الاقتصادية (هـ)</div>
+<div class="bar"><div class="fill" id="barE"></div></div>
+<div class="num" id="scoreE">0</div>
+<div class="tier" id="tierE"></div>
+</div>
+<div class="scorebox">
+<div class="label">الثقافية (ج)</div>
+<div class="bar"><div class="fill" id="barC"></div></div>
+<div class="num" id="scoreC">0</div>
+<div class="tier" id="tierC"></div>
+</div>
+<div class="scorebox">
+<div class="label">اجتماعي (ق)</div>
+<div class="bar"><div class="fill" id="barS"></div></div>
+<div class="num" id="scoreS">0</div>
+<div class="tier" id="tierS"></div>
+</div>
+<div class="scorebox">
+<div class="label">رمزي (ص)</div>
+<div class="bar"><div class="fill" id="barY"></div></div>
+<div class="num" id="scoreY">0</div>
+<div class="tier" id="tierY"></div>
+</div>
+</div>
+</section>
+</div>
+</section>

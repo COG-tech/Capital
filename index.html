@@ -1,0 +1,48 @@
+﻿---
+layout: none
+---
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ECSY Type Explorer</title>
+    <script>
+      (function () {
+        var base = "{{ site.baseurl | default: '' }}";
+        var stored = null;
+        try {
+          stored = localStorage.getItem("site_lang");
+        } catch (err) {
+          stored = null;
+        }
+        var raw = (navigator.language || navigator.userLanguage || "").toLowerCase();
+        var detected = "en";
+        if (raw.startsWith("fil") || raw.startsWith("tl")) detected = "fil";
+        else if (raw.startsWith("ar")) detected = "ar";
+        else if (raw.startsWith("es")) detected = "es";
+        else if (raw.startsWith("fr")) detected = "fr";
+        else if (raw.startsWith("hi")) detected = "hi";
+        else if (raw.startsWith("bn")) detected = "bn";
+        else if (raw.startsWith("pt")) detected = "pt";
+        else if (raw.startsWith("ru")) detected = "ru";
+        else if (raw.startsWith("id")) detected = "id";
+        else if (raw.startsWith("zh")) {
+          if (raw.indexOf("hant") !== -1 || raw.indexOf("tw") !== -1 || raw.indexOf("hk") !== -1 || raw.indexOf("mo") !== -1) {
+            detected = "zh-hant";
+          } else {
+            detected = "zh-hans";
+          }
+        }
+        var locale = stored || detected || "en";
+        var target = (base + "/" + locale + "/index.html").replace(/\/+/g, "/");
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      Please enable JavaScript. If you are not redirected, open <a href="{{ site.baseurl | default: '' }}/en/index.html">English</a>.
+    </noscript>
+  </body>
+</html>
