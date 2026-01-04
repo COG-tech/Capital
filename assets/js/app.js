@@ -158,7 +158,7 @@ const ITEMS = [
     id: "E1",
     domain: "E",
     type: "likert7",
-    text: "I am confident I could cover an unexpected expense of $5,000 and bounce back financially.",
+    text: "I could cover at least one month of essential living costs using savings I can access within 7 days, even if my main income stopped today, without taking on new debt or selling long-term investments.",
   },
   {
     id: "E2",
@@ -861,6 +861,7 @@ const nextPageBtn = document.getElementById("nextPageBtn");
 const pageLabelEl = document.getElementById("pageLabel");
 const fieldSelectEl = document.getElementById("fieldSelect");
 const resultTypeLink = document.getElementById("resultTypeLink");
+const resultsActionsEl = document.querySelector(".results-actions");
 
 let currentPage = 0;
 let pageAdvanceTimer = null;
@@ -983,6 +984,9 @@ function setPage(page, options = {}) {
   }
   if (nextPageBtn) {
     nextPageBtn.disabled = currentPage >= totalPages - 1;
+  }
+  if (resultsActionsEl) {
+    resultsActionsEl.classList.toggle("hidden", currentPage < totalPages - 1);
   }
 
   if (scroll && quizEl) {
