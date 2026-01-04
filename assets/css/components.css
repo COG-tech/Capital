@@ -171,6 +171,16 @@
   transition: transform .12s ease;
 }
 .type-card:hover{ transform: translateY(-2px); text-decoration: none; }
+.type-card-img{
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+  margin-bottom: 10px;
+}
 .type-pill{
   display:inline-flex;
   align-items:center;
@@ -245,6 +255,16 @@
 .cap-d{ color: rgba(15,23,42,0.55); }
 
 .type-avatar{ width:220px; height:220px; }
+.type-image{
+  display: block;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(15,23,42,0.10);
+  box-shadow: var(--shadow);
+  background: #fff;
+}
 .avatar-fallback{
   width:100%; height:100%;
   border-radius:18px;
@@ -343,6 +363,7 @@
   .type-body{ max-width: none; }
   .type-hero{ flex-direction: column; }
   .type-avatar{ width: 100%; height: 220px; }
+  .type-image{ width: 100%; height: 220px; }
 }
 
 /* Knowledge base */
