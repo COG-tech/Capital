@@ -1054,6 +1054,24 @@ section {
   font-size: 13px;
 }
 
+.footer-links {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
 @media (max-width: 980px) {
   .steps-grid {
     grid-template-columns: 1fr;
