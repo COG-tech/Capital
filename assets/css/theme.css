@@ -16,6 +16,9 @@
   --accentB: #F97316;
   --accentTint: #FFF7ED;
   --accentInk: #7C2D12;
+
+  --brandA: #2563EB;
+  --brandB: #1E293B;
 }
 
 .group-ec { --accentA:#2563EB; --accentB:#F97316; --accentTint:#FFF7ED; --accentInk:#7C2D12; }

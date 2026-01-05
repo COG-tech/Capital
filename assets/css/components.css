@@ -24,7 +24,7 @@
 .brand-mark{
   width: 34px; height: 34px;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--accentA), var(--accentB));
+  background: linear-gradient(135deg, var(--brandA), var(--brandB));
   box-shadow: var(--shadow);
 }
 .nav{
@@ -57,7 +57,7 @@
 }
 .btn-main,
 .btn-primary{
-  background: linear-gradient(135deg, var(--accentA), var(--accentB));
+  background: linear-gradient(135deg, var(--brandA), var(--brandB));
   color: white;
   box-shadow: var(--shadow);
 }
