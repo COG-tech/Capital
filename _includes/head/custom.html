@@ -1,7 +1,19 @@
 <!-- start custom head snippets -->
+{% assign meta_title = page.title | default: site.title %}
+{% if page.title and page.title != site.title %}
+  {% capture meta_title %}{{ page.title }} {{ site.title_separator | default: "-" }} {{ site.title }}{% endcapture %}
+{% endif %}
+{% assign meta_description = page.description | default: page.excerpt | markdownify | strip_html | normalize_whitespace | default: site.description %}
+{% assign meta_image = page.image | default: site.og_image %}
 <meta name="theme-color" content="#F6F7FB" />
 {% if page.robots %}
 <meta name="robots" content="{{ page.robots }}" />
+{% endif %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ meta_title | strip }}" />
+<meta name="twitter:description" content="{{ meta_description | strip }}" />
+{% if meta_image %}
+<meta name="twitter:image" content="{{ meta_image | absolute_url }}" />
 {% endif %}
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <!-- end custom head snippets -->
