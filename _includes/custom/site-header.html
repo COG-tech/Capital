@@ -1,4 +1,5 @@
-﻿{% assign t = site.data.i18n[page.locale] | default: site.data.i18n.en %}
+{% assign t = site.data.i18n[page.locale] | default: site.data.i18n.en %}
+{% assign current_page = page.url | split: "/" | last %}
 <header class="site-header">
   <div class="container">
     <div class="header-row">
@@ -7,11 +8,11 @@
         <span>ECSY</span>
       </a>
       <nav class="nav" aria-label="Site">
-        <a href="index.html">{{ t.nav.home }}</a>
+        <a href="index.html"{% if current_page == "index.html" %} aria-current="page"{% endif %}>{{ t.nav.home }}</a>
         <a href="index.html#test">{{ t.nav.test }}</a>
-        <a href="types.html">{{ t.nav.types }}</a>
-        <a href="theory.html">{{ t.nav.theory }}</a>
-        <a href="resources.html">{{ t.nav.resources }}</a>
+        <a href="types.html"{% if current_page == "types.html" %} aria-current="page"{% endif %}>{{ t.nav.types }}</a>
+        <a href="theory.html"{% if current_page == "theory.html" %} aria-current="page"{% endif %}>{{ t.nav.theory }}</a>
+        <a href="resources.html"{% if current_page == "resources.html" %} aria-current="page"{% endif %}>{{ t.nav.resources }}</a>
       </nav>
       <div class="header-actions">
         <button class="btn btn-ghost lang-toggle" id="langToggle" type="button" aria-haspopup="dialog" aria-controls="langModal">

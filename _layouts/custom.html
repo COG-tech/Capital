@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/components.css' | relative_url }}">
   </head>
   <body class="layout--custom {{ page.group | default: 'group-ec' }}{% if page.classes %} {{ page.classes | join: ' ' }}{% endif %}" dir="{{ html_dir }}">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="initial-content">
       {% include custom/site-header.html %}
-      <main class="site-main">
+      <main id="main-content" class="site-main" tabindex="-1">
         {{ content }}
       </main>
       {% include custom/site-footer.html %}
