@@ -139,6 +139,7 @@
   .hero-grid{ grid-template-columns: 1fr; }
   .grid-3{ grid-template-columns: 1fr; }
   .grid-2{ grid-template-columns: 1fr; }
+  .creator-panel__content{ grid-template-columns: 1fr; }
   .nav{ flex-wrap: wrap; justify-content: center; }
   .header-row{ flex-direction: column; align-items: flex-start; }
   .header-actions{ width: 100%; justify-content: flex-start; }
@@ -150,6 +151,22 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   padding: 18px;
+}
+.creator-panel{
+  margin: 18px 0;
+  background: linear-gradient(135deg, rgba(37,99,235,.08), rgba(249,115,22,.08), #ffffff);
+}
+.creator-panel__content{
+  display:grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 18px;
+  align-items:center;
+}
+.creator-panel__actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 12px;
+  align-items:center;
 }
 .card-title{
   display:flex;

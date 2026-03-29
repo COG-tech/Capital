@@ -1,16 +1,16 @@
 ---
 ---
 
-{% assign html_lang = page.lang | default: site.locale | default: "en" %}
-{% if page.dir %}
-  {% assign html_dir = page.dir %}
-{% elsif site.rtl %}
+{% assign page_locale = page.locale | default: page.lang | default: site.locale | default: "en" %}
+{% assign html_lang = page_locale | replace: "_", "-" %}
+{% assign rtl_locales = "ar" | split: "," %}
+{% if rtl_locales contains page_locale %}
   {% assign html_dir = "rtl" %}
 {% else %}
   {% assign html_dir = "ltr" %}
 {% endif %}
 <!doctype html>
-<html lang="{{ html_lang | replace: "_", "-" }}" dir="{{ html_dir }}" class="no-js">
+<html lang="{{ html_lang }}" dir="{{ html_dir }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
