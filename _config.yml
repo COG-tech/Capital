@@ -99,8 +99,8 @@ og_image                 : "/assets/img/types/type-1-mf.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Organization
+  name                   : "ECSY Type Explorer"
   links: # An array of links to social media profiles
 
 creator:
@@ -125,9 +125,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "ECSY Type Explorer"
+  name             : "Chad O. Grant"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A multilingual assessment site for mapping Economic, Cultural, Social, and Symbolic capital."
+  bio              : "Creator of ECSY Type Explorer and the wider Chad O. Grant archive of articles, books, and videos."
   location         :
   email            :
   links:

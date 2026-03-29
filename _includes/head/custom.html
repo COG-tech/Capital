@@ -10,8 +10,10 @@
 {% assign site_home = site.url | append: site.baseurl | append: "/en/" %}
 {% assign site_website_id = site_home | append: "#website" %}
 {% assign page_language = page.lang | default: page.locale | default: site.locale | replace: "_", "-" %}
-{% if page.name == "index.html" and page.locale and creator.name and meta_description contains creator.name == false %}
-  {% capture meta_description %}{{ meta_description }} Created by {{ creator.name }}.{% endcapture %}
+{% if page.name == "index.html" and page.locale and creator.name %}
+  {% unless meta_description contains creator.name %}
+    {% capture meta_description %}{{ meta_description }} Created by {{ creator.name }}.{% endcapture %}
+  {% endunless %}
 {% endif %}
 <meta name="theme-color" content="#F6F7FB" />
 {% if page.robots %}
