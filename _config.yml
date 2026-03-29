@@ -103,6 +103,18 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
+creator:
+  name                   : "Chad O. Grant"
+  url                    : "https://cog-tech.github.io/chadogrant/"
+  description            : "Chad O. Grant writes on macroeconomics, geopolitics, education, and capital systems across S.C.O.P.E. Report, books, and related projects."
+  same_as:
+    - "https://www.youtube.com/@Chadogrant"
+    - "https://chadogrant.substack.com/"
+    - "https://dawnnexus.substack.com/"
+    - "https://x.com/ChadOGrant"
+    - "https://x.com/MarathonMacro"
+    - "https://whop.com/marathon-macro/"
+
 # Analytics
 analytics:
   provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
@@ -303,6 +315,10 @@ compress_html:
 
 # Defaults
 defaults:
+  - scope:
+      path: "google7c0a49f823813e63.html"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
