@@ -1,10 +1,20 @@
 <section class="card creator-panel" aria-labelledby="creator-panel-title">
   <div class="creator-panel__content">
+    <div class="creator-panel__image-wrap">
+      <img
+        class="creator-panel__image"
+        src="{{ site.creator.image | relative_url }}"
+        alt="{{ site.creator.image_alt }}"
+        loading="eager"
+        decoding="async"
+        width="600"
+        height="600">
+    </div>
     <div>
       <div class="kicker">Creator</div>
       <h2 id="creator-panel-title" translate="no">Chad O. Grant</h2>
       <p>This ECSY Type Explorer is part of the wider public work of Chad O. Grant, also written as Chad O Grant, on capital systems, education, social mobility, and structural analysis.</p>
-      <p>For the main author profile, books, articles, and video archive, visit the official Chad O. Grant site.</p>
+      <p>For the main author profile, books, articles, and video archive, visit Chad O. Grant's main site.</p>
     </div>
     <div class="creator-panel__actions">
       <a class="btn btn-main" href="{{ site.creator.url }}" rel="author">Visit Chad O. Grant</a>

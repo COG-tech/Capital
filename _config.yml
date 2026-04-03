@@ -95,7 +95,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/img/types/type-1-mf.png"
+og_image                 : "/assets/img/chad-o-grant-headshot.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -106,6 +106,8 @@ social:
 creator:
   name                   : "Chad O. Grant"
   url                    : "https://cog-tech.github.io/chadogrant/"
+  image                  : "/assets/img/chad-o-grant-headshot.jpg"
+  image_alt              : "Portrait of Chad O. Grant"
   description            : "Chad O. Grant writes on macroeconomics, geopolitics, education, and capital systems across S.C.O.P.E. Report, books, and related projects."
   same_as:
     - "https://www.youtube.com/@Chadogrant"

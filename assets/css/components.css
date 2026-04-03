@@ -158,9 +158,22 @@
 }
 .creator-panel__content{
   display:grid;
-  grid-template-columns: 1.3fr .7fr;
+  grid-template-columns: 180px 1.1fr .7fr;
   gap: 18px;
   align-items:center;
+}
+.creator-panel__image-wrap{
+  display:flex;
+  justify-content:center;
+}
+.creator-panel__image{
+  display:block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 .creator-panel__actions{
   display:flex;

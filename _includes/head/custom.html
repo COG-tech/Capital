@@ -7,6 +7,7 @@
 {% assign meta_image = page.image | default: site.og_image %}
 {% assign creator = site.creator %}
 {% assign creator_person_id = creator.url | append: "#person" %}
+{% assign creator_image = creator.image | absolute_url %}
 {% assign site_home = site.url | append: site.baseurl | append: "/en/" %}
 {% assign site_website_id = site_home | append: "#website" %}
 {% assign page_language = page.lang | default: page.locale | default: site.locale | replace: "_", "-" %}
@@ -14,6 +15,9 @@
   {% unless meta_description contains creator.name %}
     {% capture meta_description %}{{ meta_description }} Created by {{ creator.name }}.{% endcapture %}
   {% endunless %}
+  {% if creator.image %}
+    {% assign meta_image = creator.image %}
+  {% endif %}
 {% endif %}
 <meta name="theme-color" content="#F6F7FB" />
 {% if page.robots %}
@@ -40,9 +44,26 @@
   "alternateName": "Chad O Grant",
   "url": {{ creator.url | jsonify }},
   "description": {{ creator.description | jsonify }},
+  "image": {{ creator_image | jsonify }},
   "sameAs": [{% for profile in creator.same_as %}{{ profile | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
 }
 </script>
+{% if creator.image %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "@id": {{ creator_image | append: "#image" | jsonify }},
+  "contentUrl": {{ creator_image | jsonify }},
+  "url": {{ creator_image | jsonify }},
+  "name": "Portrait of Chad O. Grant",
+  "caption": {{ creator.image_alt | jsonify }},
+  "creator": {
+    "@id": {{ creator_person_id | jsonify }}
+  }
+}
+</script>
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
